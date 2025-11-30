@@ -36,4 +36,12 @@ public class DisciplinaService {
         }
         return null;
     }
+    public Disciplina getDisciplinaById(int id){
+        for(Disciplina d : disciplinas){
+            if(d.getIdDisciplina() == id){
+                return d;
+            }
+        }
+        return null;
+    }
 }

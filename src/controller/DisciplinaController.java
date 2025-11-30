@@ -72,9 +72,7 @@ public class DisciplinaController {
     public Disciplina buscarDisciplina(String nomeDiscplina){
         return  disciplinaService.buscarDisciplina(nomeDiscplina);
     }
-
-
-
-
-
+    public Disciplina getDisciplinaById(int id) {
+        return disciplinaService.getDisciplinaById(id);
+    }
 }
