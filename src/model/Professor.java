@@ -11,4 +11,9 @@ public class Professor extends Pessoa {
     public void setFormacao(String formacao) {
         this.formacao = formacao;
     }
+    @Override
+    public String toString() {
+        // Aproveitamos o getNome() e getArea() que vêm da classe Pessoa
+        return "Nome: " + getNome() + " | Área: " + getArea() + " | Formação: " + getFormacao();
+    }
 }
